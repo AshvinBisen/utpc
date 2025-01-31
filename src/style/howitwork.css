@@ -1,0 +1,121 @@
+  .how-it-works {
+    width: 100%;
+    padding: 80px;
+  }
+  
+  .how-it-works h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .how-it-works-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .roadmap {
+    flex: 1;
+    position: relative;
+  }
+  
+  .roadmap-line {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* margin-left: 30px; */
+  }
+  
+  .roadmap-background {
+    position: absolute;
+    top: 0;
+    left: -33.7px; 
+    width: 23px;
+    height: 100%;
+    background-color: #FF7043; 
+    border-radius: 50px;
+    z-index: 1;
+  }
+  
+  .roadmap-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .dot {
+    width: 35px;
+    height: 35px;
+    color: #FF7043;
+    background-color: #FF7043;
+    border: 10px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    z-index: 1;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+  }
+  
+  .card p {
+    margin: 10px 0 0;
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #616161;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .how-it-works {
+      padding: 50px;
+    }
+
+    .how-it-works-content {
+      flex-direction: column;
+    }
+  
+    .roadmap {
+      margin-top: 20px;
+    }
+  
+    .roadmap-item {
+      margin-bottom: 20px;
+    }
+  
+    .dot {
+      left: -30px;
+    }
+  
+    .roadmap-background {
+      left: -25px; /* Adjust for smaller screens */
+      /* width: 30px; */
+    }
+  }
+  

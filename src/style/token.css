@@ -1,0 +1,148 @@
+.tokenomic_section_container {
+  /* padding: 5rem 0rem;
+  margin: 0rem 6rem; */
+  background-color: #fff;
+  text-align: center;
+  /* padding: 80px 60px 0px 60px; */
+  padding: 3rem 2rem;
+}
+
+.tokenomic_heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.tokenomic_body {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  /* gap: 30px; */
+}
+
+.tokenomics_left,
+.tokenomics_right {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+/* .tokenomics_left {
+  flex: 1;
+  /* min-width: 300px;
+  max-width: 600px; 
+  max-width: 45%;
+} */
+
+/* Token details */
+.tokenomics {
+  /* background-color: white; */
+  width: 100%;
+  padding: 20px;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.token {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.token .div1 p {
+  margin: 0;
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+}
+
+.token .div2 p {
+  margin: 0;
+  font-size: 16px;
+  color: #646464;
+  font-weight: 600;
+}
+
+.token:last-child {
+  border-bottom: none;
+}
+
+/* Image styling */
+.tokenomics_right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive styles for different screen sizes */
+@media (max-width: 1024px) {
+  .tokenomic_heading {
+    font-size: 2rem;
+  }
+
+ 
+}
+
+@media (max-width: 768px) {
+.token {
+  max-width: 200%;
+}
+
+  .tokenomic_heading {
+    font-size: 1.8rem;
+  }
+
+  .tokenomic_body {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .tokenomic_section_container {
+    padding: 60px 0;
+  }
+
+  /* .tokenomics_right img {
+    width: 80%;
+  } */
+  .tokenomics_left,
+  .tokenomics_right {
+     
+    
+    width: 100%;
+    
+  }
+  .tokenomics_right{
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tokenomic_heading {
+    font-size: 1.5rem;
+  }
+
+  .token {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .token div {
+    width: 100%;
+    text-align: left;
+  }
+  /* .tokenomics_right{
+    display: flex;
+    justify-content: center;
+  }
+  .tokenomics_right img {
+    width: 100%;
+     margin-left: 20px;
+  } */
+}

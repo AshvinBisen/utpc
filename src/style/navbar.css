@@ -1,0 +1,139 @@
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 1rem 6rem;
+  }
+  
+  .logo img {
+    max-width: 202px;
+    height: 50px;
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: right;
+  }
+  
+  .nav-menu ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #525252;
+    /* font-weight: bold; */
+  }
+  
+  .buy-token-btn {
+    padding: 10px 20px;
+    background-color: #FE4A23;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px 0px 30px 0px;
+    height: 40px;
+    width: 160px;
+  }
+  
+  .mobile-menu-toggle {
+    display: none;
+  }
+  
+  .hamburger-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #525252;
+    display: block;
+    position: relative;
+  }
+  
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+  }
+  
+  .hamburger-icon::before {
+    top: -8px;
+  }
+  
+  .hamburger-icon::after {
+    bottom: -8px;
+  }
+  
+  /* Responsive Styles */
+
+  @media (max-width: 1061px) {  
+    .header {
+      padding: 1rem;
+    }
+
+    .nav-menu ul {
+      gap: 15px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+  
+    .nav-menu.open {
+      display: block;
+    }
+  
+    .nav-menu ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .nav-menu ul li {
+      margin: 15px 0;
+    }
+  
+    .buy-token-btn {
+      display: none;
+    }
+  
+    .mobile-menu-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px;
+    }
+  
+    .logo img {
+      max-width: 100px;
+      height: fit-content;
+    }
+  
+    .hamburger-icon,
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+      width: 20px;
+    }
+  }
+  

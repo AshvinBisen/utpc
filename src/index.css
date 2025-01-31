@@ -1,0 +1,66 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --w3m-accent-color: #ff4444 !important;
+  --w3m-background-color: #ff4444 !important;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: fit-content;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+/* Customize the next button */
+.swiper-button-next {
+  
+    color: #FE4A23;   
+    padding: 0px;  
+    right:  0px;  
+}
+
+/* Customize the prev button */
+.swiper-button-prev {
+    color: #FE4A23;  
+    padding: 10px;  
+    left: 0px;  
+}
+
+/* You can also style hover and active states */
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(184, 98, 0, 0.118); /* Darken on hover */
+}
+
+.swiper-pagination-bullet{
+  background-color: #FE4A23; 
+}
+
+
+.presale-main{  
+ 
+  height: 100vh;
+
+  width: full;
+  background-image: url("./assets/presale-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
